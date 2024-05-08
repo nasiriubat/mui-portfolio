@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <Container sx={{ paddingTop: 6 }}>
+        <Container id='about' sx={{ paddingTop: 6 }}>
             <Paper sx={{ padding: "20px", marginTop: '2px' }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={4}>

@@ -14,7 +14,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { red } from '@mui/material/colors';
+import { Link } from 'react-scroll';
+
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Portfolio','About', 'Contact'];
@@ -38,6 +39,8 @@ function DrawerAppBar(props) {
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
+              <Link to='about' smooth duration={500}>About Page</Link>
+
             </ListItemButton>
           </ListItem>
         ))}

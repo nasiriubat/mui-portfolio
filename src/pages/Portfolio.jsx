@@ -58,12 +58,12 @@ const projects = [
 const Portfolio = () => {
 
     return (
-        <Container sx={{ paddingTop: 4 }}>
-            <Paper>
+        <Container sx={{ paddingTop: 4 }} gutterBottom>
+            <Paper >
                 <Typography variant="h4" align='center' gutterBottom>
                     Portfolio
                 </Typography>
-                <Grid container spacing={2} justifyContent={'center'} paddingTop={3}>
+                <Grid  container spacing={2} justifyContent={'center'} padding={3} paddingBottom={4}>
                     {projects.map(item => (
                         <Grid  item xs={12} sm={6} md={4}>
                             <Card >
